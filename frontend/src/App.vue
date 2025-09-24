@@ -7,6 +7,7 @@
 		</Layout>
 		<InstallPrompt v-if="isMobile" />
 		<Dialogs />
+		<Chatbot />
 	</FrappeUIProvider>
 </template>
 <script setup>
@@ -21,6 +22,7 @@ import DesktopLayout from './components/DesktopLayout.vue'
 import MobileLayout from './components/MobileLayout.vue'
 import NoSidebarLayout from './components/NoSidebarLayout.vue'
 import InstallPrompt from './components/InstallPrompt.vue'
+import Chatbot from './components/Chatbot.vue'
 
 const { isMobile } = useScreenSize()
 const router = useRouter()
