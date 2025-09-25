@@ -567,46 +567,13 @@ onUnmounted(() => {
 	font-family: inherit;
 }
 
-/* Syntax highlighting colors for dark theme */
-:deep(.prose pre .text-blue-300) {
-	color: #93c5fd !important;
-}
-
-:deep(.prose pre .text-green-300) {
-	color: #86efac !important;
-}
-
-:deep(.prose pre .text-yellow-300) {
-	color: #fde047 !important;
-}
-
-:deep(.prose pre .text-red-300) {
-	color: #fca5a5 !important;
-}
-
-:deep(.prose pre .text-gray-400) {
-	color: #9ca3af !important;
-}
-
-:deep(.prose pre .text-gray-300) {
-	color: #d1d5db !important;
-}
-
-:deep(.prose pre .text-gray-200) {
-	color: #e5e7eb !important;
-}
-
-:deep(.prose pre .text-purple-300) {
-	color: #c4b5fd !important;
-}
-
-/* Ensure all text in code blocks is visible */
+/* Simple code block styling - just ensure text is visible */
 :deep(.prose pre) {
 	color: #e5e7eb !important;
 }
 
-:deep(.prose pre *) {
-	color: inherit !important;
+:deep(.prose pre code) {
+	color: #e5e7eb !important;
 }
 
 :deep(.prose blockquote) {
@@ -628,5 +595,8 @@ onUnmounted(() => {
 }
 .green-color{
  background:#0e7159;
+}
+code p{
+  color:white !important;
 }
 </style>
